@@ -4,7 +4,7 @@
   "description": "Notes PWA",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1",
+    "start": "http-server -c-1s",
     "start:ssl": "http-server -c-1 -S -C cert.pem -K key.pem",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +17,20 @@
   ],
   "author": "Majid Hajian",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
   "devDependencies": {
     "http-server": "^0.10.0"
+  },
+  "webkit": {
+    "plugin": true
   }
 }
