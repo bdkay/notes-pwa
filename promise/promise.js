@@ -1,11 +1,11 @@
-function add(number, callback){
+function add(number){
   return new Promise(function(resolve, reject) {
     if (number > 0) {
       reject('You cannot have more than 4');
     }
     setTimeout(function (){
       resolve(number + 1);
-      }, 1000);
+    }, 1000);
   });
 }
 
